@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Fun Spark</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="app">
+      <header class="app__header">
+        <div>
+          <p class="app__eyebrow" data-i18n="eyebrow">Instant Fun App</p>
+          <h1 class="app__title" data-i18n="title">Fun Spark</h1>
+          <p class="app__subtitle" data-i18n="subtitle">
+            Pick a vibe and get entertainment in one click.
+          </p>
+        </div>
+        <button class="lang-toggle" id="lang-toggle" type="button">
+          Русский
+        </button>
+      </header>
+
+      <main class="app__main">
+        <section class="card">
+          <h2 data-i18n="jokeTitle">Joke Generator</h2>
+          <p class="card__text" id="joke-text"></p>
+          <button class="primary" id="new-joke" type="button" data-i18n="newJoke">
+            New joke
+          </button>
+        </section>
+
+        <section class="card">
+          <h2 data-i18n="triviaTitle">Quick Trivia</h2>
+          <p class="card__text" id="trivia-text"></p>
+          <button class="primary" id="new-trivia" type="button" data-i18n="newTrivia">
+            Surprise me
+          </button>
+        </section>
+
+        <section class="card">
+          <h2 data-i18n="rpsTitle">Rock · Paper · Scissors</h2>
+          <div class="rps-buttons">
+            <button class="secondary" data-choice="rock" type="button" data-i18n="rock">
+              Rock
+            </button>
+            <button class="secondary" data-choice="paper" type="button" data-i18n="paper">
+              Paper
+            </button>
+            <button class="secondary" data-choice="scissors" type="button" data-i18n="scissors">
+              Scissors
+            </button>
+          </div>
+          <p class="card__text" id="rps-result" data-i18n="rpsPrompt">
+            Make your move!
+          </p>
+        </section>
+
+        <section class="card card--wide">
+          <h2 data-i18n="moodTitle">Mood Booster</h2>
+          <p class="card__text" id="mood-text"></p>
+          <div class="mood-actions">
+            <button class="primary" id="new-mood" type="button" data-i18n="newMood">
+              Boost me
+            </button>
+            <button class="ghost" id="new-activity" type="button" data-i18n="newActivity">
+              Quick activity
+            </button>
+          </div>
+        </section>
+      </main>
+
+      <footer class="app__footer">
+        <p data-i18n="footer">Made for instant fun—online or offline.</p>
+      </footer>
+    </div>
+    <script src="app.js"></script>
+  </body>
+</html>
